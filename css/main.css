@@ -1,0 +1,64 @@
+@import url(./hamburger-nav.css);
+@import url(./footer.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #222;
+    padding-bottom: 50px;
+}
+
+/* Home page Styling, Background Image*/
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-image-main {
+    position: relative;
+    width: 100%;
+    height: auto;
+   margin-top: 60px;
+}
+
+.heading{
+    color: white;
+    position: absolute;top: 35%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn1 {
+position: absolute; top: 40%;
+border-radius: 4px;
+text-align: center;
+margin-top: 1.3rem;
+font-size: 30px;
+font-weight: bold;
+padding: 8px;
+border-radius: 10px;
+padding-left: 10px;
+padding-right: 10px;
+text-decoration: none;
+}
+
+.btn1 a {
+  color: rgb(2, 2, 2);
+  text-decoration: none;
+}
+
+
+ul{
+    list-style: none;
+    color: white;
+    font-size: 10px;
+}
+
