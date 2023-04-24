@@ -2,23 +2,38 @@
 @import url(./footer.css);
 
 * {
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 
 body {
-    color: #222;
-    padding-bottom: 50px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10rem 1fr 20rem;
 }
 
+header, footer {
+    background-color: yellow;
+}
+main {
+    display: grid;
+    grid-template-columns: minmax(20rem, 100%);
+    grid-template-rows: 30rem 40rem;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    
+}
 /* Home page Styling, Background Image*/
 
 main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 }
 
 .background-image-main {
@@ -30,14 +45,14 @@ main{
 
 .heading{
     color: white;
-    position: absolute;top: 35%;
+    position: absolute;top: 20%;
     width: 100%;
     text-align: center;
     font-size: 30px;
 }
 
 .btn1 {
-position: absolute; top: 40%;
+position: absolute; top: 25%;
 border-radius: 4px;
 text-align: center;
 margin-top: 1.3rem;
@@ -61,4 +76,164 @@ ul{
     color: white;
     font-size: 10px;
 }
+
+
+.body {
+    height: 100vh;
+   display: grid;
+   grid-template-columns: auto;
+   grid-template-rows: 10rem 1fr 20rem;
+}
+
+
+/*Jackets page styling*/
+
+.featured-jackets-container {
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,minmax(15rem, 20rem) );
+    grid-template-rows: 25rem;
+    gap: 1rem;
+
+}
+
+.featured-jackets {
+ box-shadow: 0 0 15px red;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 50%);
+}
+
+.featured-jacket-top-card{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-jacket-top-card img {
+    height: 100%;
+}
+
+.featured-jacket-bottom {
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+position: relative;
+}
+
+.featured-jacket-bottom h3 p {
+    padding: 20px;
+}
+
+
+.featured-link{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom:0;
+    width: 100%;text-align: center;
+}
+
+.jackets-container img {
+    max-width: 200px;
+    height: auto;
+ }
+
+
+.jacket-card {
+    position: relative;
+    padding: 20px;
+}
+
+.jacket-link::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+
+.jacket-top-card {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+.jackets-info p {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.jackets-header p {
+    font-weight: bold
+}
+
+
+/*Spesific Jackets page styling */
+
+.specific-jacket-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.jacket-details-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+.jacket-details-top-card {
+    background-color: rgb(255, 255, 255);
+}
+
+.jacket-details-top-card img {
+    width: 50%;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+
+
+/* Order confirmation site */
+
+
+.check{
+    font-size: 150px;
+    padding-top: 50px;
+    }
+    
+    .orderconf{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
+        gap: 10px;
+        color: white;
+    }
 

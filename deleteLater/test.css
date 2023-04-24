@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10rem 1fr 20rem;
+}
+
+header, footer {
+    background-color: yellow;
+}
+main {
+    display: grid;
+    grid-template-columns: minmax(20rem, 100%);
+    grid-template-rows: 30rem 40rem;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+
+.featured-jackets-container {
+    
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3,minmax(15rem, 20rem) );
+    grid-template-rows: 25rem;
+    gap: 1rem;
+
+}
+
+.featured-jackets {
+    background-color: rgb(255, 27, 27);
+    display: grid;
+    grid-template-columns: 5rem;
+    grid-template-rows: 5rem 10rem;
+   gap: 1rem;
+}
+
+.featured-jacket-top-card {
+   background-color: orange;
+   
+}
+.featured-jacket-top-card img {
+    height: 100%;
+ }
+ 
+.featured-jacket-bottom-card 
+
+.jackets-container {
+    background-color: rgb(51, 0, 255);
+    margin: 10px;
+}

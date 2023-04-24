@@ -9,6 +9,7 @@
     margin: auto;
 }
 
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +21,9 @@ ul {
 
 .footer {
     background-color: #0F3B53;
-    padding: 70px 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
 }
 
 .footer-col {
